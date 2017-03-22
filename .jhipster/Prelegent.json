@@ -1,0 +1,26 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "bio",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "websiteUrl",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170322233100",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "prelegent",
+    "pagination": "pagination"
+}

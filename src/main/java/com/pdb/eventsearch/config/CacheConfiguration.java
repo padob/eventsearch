@@ -41,6 +41,7 @@ public class CacheConfiguration {
             cm.createCache(com.pdb.eventsearch.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(com.pdb.eventsearch.domain.User.class.getName() + ".authorities", jcacheConfiguration);
             cm.createCache(com.pdb.eventsearch.domain.SocialUserConnection.class.getName(), jcacheConfiguration);
+            cm.createCache(com.pdb.eventsearch.domain.Prelegent.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }

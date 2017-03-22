@@ -1,0 +1,24 @@
+{
+    "eventsearchApp": {
+        "prelegent" : {
+            "home": {
+                "title": "Prelegents",
+                "createLabel": "Dodaj Prelegent",
+                "createOrEditLabel": "Dodaj lub edytuj: Prelegent",
+                "search": "Szukaj Prelegent"
+            },
+            "created": "Utworzono nowy Prelegent z identyfikatorem {{ param }}",
+            "updated": "Uaktualniono Prelegent z identyfikatorem {{ param }}",
+            "deleted": "Usunięto Prelegent z identyfikatorem {{ param }}",
+            "delete": {
+                "question": "Czy na pewno chcesz usunąć Prelegent {{ id }}?"
+            },
+            "detail": {
+                "title": "Prelegent"
+            },
+            "name": "Name",
+            "bio": "Bio",
+            "websiteUrl": "Website Url"
+        }
+    }
+}
