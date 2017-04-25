@@ -1,40 +1,44 @@
 entity City {
-    cityName String
+	name String
 }
 
-entity Goal {
+enum Fee {
+    FREE, PAID
+  }
+
+entity Series {
 	name String,
-    description String
+	description String,
+	organizer String
 }
 
-entity Entry {
-	date LocalDate,
-    excercice Integer,
-    meals Integer,
-    alcohol Integer,
-    notes String
+entity Topic {
+	name String
 }
 
-entity Metric {
+entity Event {
 	name String,
-    value Boolean
+    description String,
+    startDate LocalDate,
+    endDate LocalDate,
+    language String,
+    fee Fee,
+    place String,
+    address String,
+    registerationLink String,
+    eventWww String
 }
 
 relationship OneToMany {
-	Owner{goal} to Goal
+	City{city} to Event{event},
+    Series{series} to Event{event},
+    Event{event} to Topic{topic}
 }
 
-relationship OneToMany {
-	Goal{entry} to Entry
-}
+paginate City, Series, Event, Topic with pagination
 
-relationship OneToMany {
-	Entry{metric} to Metric
-}
+dto Event with mapstruct
+dto Topic with mapstruct
 
-
-paginate Entry with infinite-scroll
-paginate Owner, Goal, Metric with pagination
-
-service Entry with serviceClass
-
+service Event with serviceClass
+service Topic with serviceClass
