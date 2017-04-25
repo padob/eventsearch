@@ -1,0 +1,40 @@
+entity City {
+    cityName String
+}
+
+entity Goal {
+	name String,
+    description String
+}
+
+entity Entry {
+	date LocalDate,
+    excercice Integer,
+    meals Integer,
+    alcohol Integer,
+    notes String
+}
+
+entity Metric {
+	name String,
+    value Boolean
+}
+
+relationship OneToMany {
+	Owner{goal} to Goal
+}
+
+relationship OneToMany {
+	Goal{entry} to Entry
+}
+
+relationship OneToMany {
+	Entry{metric} to Metric
+}
+
+
+paginate Entry with infinite-scroll
+paginate Owner, Goal, Metric with pagination
+
+service Entry with serviceClass
+
