@@ -1,0 +1,25 @@
+{
+    "eventsearchApp": {
+        "series" : {
+            "home": {
+                "title": "Series",
+                "createLabel": "Dodaj Series",
+                "createOrEditLabel": "Dodaj lub edytuj: Series",
+                "search": "Szukaj Series"
+            },
+            "created": "Utworzono nowy Series z identyfikatorem {{ param }}",
+            "updated": "Uaktualniono Series z identyfikatorem {{ param }}",
+            "deleted": "Usunięto Series z identyfikatorem {{ param }}",
+            "delete": {
+                "question": "Czy na pewno chcesz usunąć Series {{ id }}?"
+            },
+            "detail": {
+                "title": "Series"
+            },
+            "name": "Name",
+            "description": "Description",
+            "organizer": "Organizer",
+            "series": "Series"
+        }
+    }
+}

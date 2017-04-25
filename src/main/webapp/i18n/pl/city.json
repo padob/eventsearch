@@ -1,0 +1,23 @@
+{
+    "eventsearchApp": {
+        "city" : {
+            "home": {
+                "title": "Cities",
+                "createLabel": "Dodaj City",
+                "createOrEditLabel": "Dodaj lub edytuj: City",
+                "search": "Szukaj City"
+            },
+            "created": "Utworzono nowy City z identyfikatorem {{ param }}",
+            "updated": "Uaktualniono City z identyfikatorem {{ param }}",
+            "deleted": "Usunięto City z identyfikatorem {{ param }}",
+            "delete": {
+                "question": "Czy na pewno chcesz usunąć City {{ id }}?"
+            },
+            "detail": {
+                "title": "City"
+            },
+            "name": "Name",
+            "city": "City"
+        }
+    }
+}

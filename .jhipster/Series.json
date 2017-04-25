@@ -1,0 +1,30 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "series",
+            "otherEntityName": "event",
+            "otherEntityRelationshipName": "event"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "organizer",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170425224944",
+    "entityTableName": "series",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "no"
+}

@@ -1,0 +1,9 @@
+{
+    "eventsearchApp": {
+        "Fee" : {
+            "null": "",
+            "FREE": "FREE",
+            "PAID": "PAID"
+        }
+    }
+}

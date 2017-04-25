@@ -1,0 +1,67 @@
+
+<div>
+    <h2><span data-translate="eventsearchApp.event.detail.title">Event</span> {{vm.event.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="eventsearchApp.event.name">Name</span></dt>
+        <dd>
+            <span>{{vm.event.name}}</span>
+        </dd>
+        <dt><span data-translate="eventsearchApp.event.description">Description</span></dt>
+        <dd>
+            <span>{{vm.event.description}}</span>
+        </dd>
+        <dt><span data-translate="eventsearchApp.event.startDate">Start Date</span></dt>
+        <dd>
+            <span>{{vm.event.startDate | date:'mediumDate'}}</span>
+        </dd>
+        <dt><span data-translate="eventsearchApp.event.endDate">End Date</span></dt>
+        <dd>
+            <span>{{vm.event.endDate | date:'mediumDate'}}</span>
+        </dd>
+        <dt><span data-translate="eventsearchApp.event.language">Language</span></dt>
+        <dd>
+            <span>{{vm.event.language}}</span>
+        </dd>
+        <dt><span data-translate="eventsearchApp.event.fee">Fee</span></dt>
+        <dd>
+            <span data-translate="{{'eventsearchApp.Fee.' + vm.event.fee}}">{{vm.event.fee}}</span>
+        </dd>
+        <dt><span data-translate="eventsearchApp.event.place">Place</span></dt>
+        <dd>
+            <span>{{vm.event.place}}</span>
+        </dd>
+        <dt><span data-translate="eventsearchApp.event.address">Address</span></dt>
+        <dd>
+            <span>{{vm.event.address}}</span>
+        </dd>
+        <dt><span data-translate="eventsearchApp.event.registerationLink">Registeration Link</span></dt>
+        <dd>
+            <span>{{vm.event.registerationLink}}</span>
+        </dd>
+        <dt><span data-translate="eventsearchApp.event.eventWww">Event Www</span></dt>
+        <dd>
+            <span>{{vm.event.eventWww}}</span>
+        </dd>
+        <dt><span data-translate="eventsearchApp.event.event">Event</span></dt>
+        <dd>
+            <a ui-sref="city-detail({id:vm.event.eventId})">{{vm.event.eventId}}</a>
+        </dd>
+        <dt><span data-translate="eventsearchApp.event.event">Event</span></dt>
+        <dd>
+            <a ui-sref="series-detail({id:vm.event.eventId})">{{vm.event.eventId}}</a>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="event-detail.edit({id:vm.event.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

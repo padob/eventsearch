@@ -1,0 +1,107 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myEventLabel" data-translate="eventsearchApp.event.home.createOrEditLabel">Create or edit a Event</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.event.id">
+            <label for="id" data-translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.event.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="eventsearchApp.event.name" for="field_name">Name</label>
+            <input type="text" class="form-control" name="name" id="field_name"
+                    ng-model="vm.event.name"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="eventsearchApp.event.description" for="field_description">Description</label>
+            <input type="text" class="form-control" name="description" id="field_description"
+                    ng-model="vm.event.description"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="eventsearchApp.event.startDate" for="field_startDate">Start Date</label>
+                <div class="input-group">
+                    <input id="field_startDate" type="text" class="form-control" name="startDate" uib-datepicker-popup="{{dateformat}}" ng-model="vm.event.startDate" is-open="vm.datePickerOpenStatus.startDate"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="vm.openCalendar('startDate')"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="eventsearchApp.event.endDate" for="field_endDate">End Date</label>
+                <div class="input-group">
+                    <input id="field_endDate" type="text" class="form-control" name="endDate" uib-datepicker-popup="{{dateformat}}" ng-model="vm.event.endDate" is-open="vm.datePickerOpenStatus.endDate"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="vm.openCalendar('endDate')"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="eventsearchApp.event.language" for="field_language">Language</label>
+            <input type="text" class="form-control" name="language" id="field_language"
+                    ng-model="vm.event.language"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="eventsearchApp.event.fee" for="field_fee">Fee</label>
+            <select class="form-control" name="fee" ng-model="vm.event.fee" id="field_fee">
+                <option value="FREE" data-translate="eventsearchApp.Fee.FREE">FREE</option>
+                <option value="PAID" data-translate="eventsearchApp.Fee.PAID">PAID</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="eventsearchApp.event.place" for="field_place">Place</label>
+            <input type="text" class="form-control" name="place" id="field_place"
+                    ng-model="vm.event.place"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="eventsearchApp.event.address" for="field_address">Address</label>
+            <input type="text" class="form-control" name="address" id="field_address"
+                    ng-model="vm.event.address"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="eventsearchApp.event.registerationLink" for="field_registerationLink">Registeration Link</label>
+            <input type="text" class="form-control" name="registerationLink" id="field_registerationLink"
+                    ng-model="vm.event.registerationLink"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="eventsearchApp.event.eventWww" for="field_eventWww">Event Www</label>
+            <input type="text" class="form-control" name="eventWww" id="field_eventWww"
+                    ng-model="vm.event.eventWww"
+                    />
+        </div>
+
+        <div class="form-group">
+            <label data-translate="eventsearchApp.event.event" for="field_event">Event</label>
+            <select class="form-control" id="field_event" name="event" ng-model="vm.event.eventId" ng-options="city.id as city.id for city in vm.cities"            >
+                <option value=""></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label data-translate="eventsearchApp.event.event" for="field_event">Event</label>
+            <select class="form-control" id="field_event" name="event" ng-model="vm.event.eventId" ng-options="series.id as series.id for series in vm.series"            >
+                <option value=""></option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span data-translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span data-translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

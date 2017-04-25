@@ -1,0 +1,34 @@
+{
+    "eventsearchApp": {
+        "event" : {
+            "home": {
+                "title": "Events",
+                "createLabel": "Dodaj Event",
+                "createOrEditLabel": "Dodaj lub edytuj: Event",
+                "search": "Szukaj Event"
+            },
+            "created": "Utworzono nowy Event z identyfikatorem {{ param }}",
+            "updated": "Uaktualniono Event z identyfikatorem {{ param }}",
+            "deleted": "Usunięto Event z identyfikatorem {{ param }}",
+            "delete": {
+                "question": "Czy na pewno chcesz usunąć Event {{ id }}?"
+            },
+            "detail": {
+                "title": "Event"
+            },
+            "name": "Name",
+            "description": "Description",
+            "startDate": "Start Date",
+            "endDate": "End Date",
+            "language": "Language",
+            "fee": "Fee",
+            "place": "Place",
+            "address": "Address",
+            "registerationLink": "Registeration Link",
+            "eventWww": "Event Www",
+            "event": "Event",
+            "event": "Event",
+            "event": "Event"
+        }
+    }
+}

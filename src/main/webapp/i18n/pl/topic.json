@@ -1,0 +1,23 @@
+{
+    "eventsearchApp": {
+        "topic" : {
+            "home": {
+                "title": "Topics",
+                "createLabel": "Dodaj Topic",
+                "createOrEditLabel": "Dodaj lub edytuj: Topic",
+                "search": "Szukaj Topic"
+            },
+            "created": "Utworzono nowy Topic z identyfikatorem {{ param }}",
+            "updated": "Uaktualniono Topic z identyfikatorem {{ param }}",
+            "deleted": "Usunięto Topic z identyfikatorem {{ param }}",
+            "delete": {
+                "question": "Czy na pewno chcesz usunąć Topic {{ id }}?"
+            },
+            "detail": {
+                "title": "Topic"
+            },
+            "name": "Name",
+            "topic": "Topic"
+        }
+    }
+}
