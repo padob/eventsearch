@@ -61,16 +61,16 @@ public class Event implements Serializable {
     @Column(name = "event_www")
     private String eventWww;
 
-    @OneToMany(mappedBy = "topic")
+    @OneToMany(mappedBy = "topicInEvent")
     @JsonIgnore
     @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
     private Set<Topic> events = new HashSet<>();
 
     @ManyToOne
-    private City event;
+    private City eventInCity;
 
     @ManyToOne
-    private Series event;
+    private Series eventInSeries;
 
     public Long getId() {
         return id;
@@ -221,13 +221,13 @@ public class Event implements Serializable {
 
     public Event addEvent(Topic topic) {
         this.events.add(topic);
-        topic.setTopic(this);
+        topic.setTopicInEvent(this);
         return this;
     }
 
     public Event removeEvent(Topic topic) {
         this.events.remove(topic);
-        topic.setTopic(null);
+        topic.setTopicInEvent(null);
         return this;
     }
 
@@ -235,30 +235,30 @@ public class Event implements Serializable {
         this.events = topics;
     }
 
-    public City getEvent() {
-        return event;
+    public City getEventInCity() {
+        return eventInCity;
     }
 
-    public Event event(City city) {
-        this.event = city;
+    public Event eventInCity(City city) {
+        this.eventInCity = city;
         return this;
     }
 
-    public void setEvent(City city) {
-        this.event = city;
+    public void setEventInCity(City city) {
+        this.eventInCity = city;
     }
 
-    public Series getEvent() {
-        return event;
+    public Series getEventInSeries() {
+        return eventInSeries;
     }
 
-    public Event event(Series series) {
-        this.event = series;
+    public Event eventInSeries(Series series) {
+        this.eventInSeries = series;
         return this;
     }
 
-    public void setEvent(Series series) {
-        this.event = series;
+    public void setEventInSeries(Series series) {
+        this.eventInSeries = series;
     }
 
     @Override

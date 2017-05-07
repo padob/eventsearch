@@ -3,7 +3,7 @@
     "relationships": [
         {
             "relationshipType": "many-to-one",
-            "relationshipName": "topic",
+            "relationshipName": "topicInEvent",
             "otherEntityName": "event",
             "otherEntityField": "id"
         }

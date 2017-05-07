@@ -12,12 +12,12 @@ import java.util.List;
 @Mapper(componentModel = "spring", uses = {})
 public interface TopicMapper {
 
-    @Mapping(source = "topic.id", target = "topicId")
+    @Mapping(source = "topicInEvent.id", target = "topicInEventId")
     TopicDTO topicToTopicDTO(Topic topic);
 
     List<TopicDTO> topicsToTopicDTOs(List<Topic> topics);
 
-    @Mapping(source = "topicId", target = "topic")
+    @Mapping(source = "topicInEventId", target = "topicInEvent")
     Topic topicDTOToTopic(TopicDTO topicDTO);
 
     List<Topic> topicDTOsToTopics(List<TopicDTO> topicDTOs);

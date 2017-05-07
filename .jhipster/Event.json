@@ -5,17 +5,17 @@
             "relationshipType": "one-to-many",
             "relationshipName": "event",
             "otherEntityName": "topic",
-            "otherEntityRelationshipName": "topic"
+            "otherEntityRelationshipName": "topicInEvent"
         },
         {
             "relationshipType": "many-to-one",
-            "relationshipName": "event",
+            "relationshipName": "eventInCity",
             "otherEntityName": "city",
             "otherEntityField": "id"
         },
         {
             "relationshipType": "many-to-one",
-            "relationshipName": "event",
+            "relationshipName": "eventInSeries",
             "otherEntityName": "series",
             "otherEntityField": "id"
         }

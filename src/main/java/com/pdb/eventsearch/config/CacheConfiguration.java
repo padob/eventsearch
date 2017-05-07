@@ -42,6 +42,13 @@ public class CacheConfiguration {
             cm.createCache(com.pdb.eventsearch.domain.User.class.getName() + ".authorities", jcacheConfiguration);
             cm.createCache(com.pdb.eventsearch.domain.SocialUserConnection.class.getName(), jcacheConfiguration);
             cm.createCache(com.pdb.eventsearch.domain.Prelegent.class.getName(), jcacheConfiguration);
+            cm.createCache(com.pdb.eventsearch.domain.City.class.getName(), jcacheConfiguration);
+            cm.createCache(com.pdb.eventsearch.domain.City.class.getName() + ".cities", jcacheConfiguration);
+            cm.createCache(com.pdb.eventsearch.domain.Event.class.getName(), jcacheConfiguration);
+            cm.createCache(com.pdb.eventsearch.domain.Event.class.getName() + ".events", jcacheConfiguration);
+            cm.createCache(com.pdb.eventsearch.domain.Series.class.getName(), jcacheConfiguration);
+            cm.createCache(com.pdb.eventsearch.domain.Series.class.getName() + ".series", jcacheConfiguration);
+            cm.createCache(com.pdb.eventsearch.domain.Topic.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }

@@ -27,8 +27,8 @@
             "registerationLink": "Registeration Link",
             "eventWww": "Event Www",
             "event": "Event",
-            "event": "Event",
-            "event": "Event"
+            "eventInCity": "Event In City",
+            "eventInSeries": "Event In Series"
         }
     }
 }

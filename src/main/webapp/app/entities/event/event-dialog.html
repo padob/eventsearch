@@ -84,14 +84,14 @@
         </div>
 
         <div class="form-group">
-            <label data-translate="eventsearchApp.event.event" for="field_event">Event</label>
-            <select class="form-control" id="field_event" name="event" ng-model="vm.event.eventId" ng-options="city.id as city.id for city in vm.cities"            >
+            <label data-translate="eventsearchApp.event.eventInCity" for="field_eventInCity">Event In City</label>
+            <select class="form-control" id="field_eventInCity" name="eventInCity" ng-model="vm.event.eventInCityId" ng-options="city.id as city.id for city in vm.cities"            >
                 <option value=""></option>
             </select>
         </div>
         <div class="form-group">
-            <label data-translate="eventsearchApp.event.event" for="field_event">Event</label>
-            <select class="form-control" id="field_event" name="event" ng-model="vm.event.eventId" ng-options="series.id as series.id for series in vm.series"            >
+            <label data-translate="eventsearchApp.event.eventInSeries" for="field_eventInSeries">Event In Series</label>
+            <select class="form-control" id="field_eventInSeries" name="eventInSeries" ng-model="vm.event.eventInSeriesId" ng-options="series.id as series.id for series in vm.series"            >
                 <option value=""></option>
             </select>
         </div>

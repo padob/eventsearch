@@ -36,7 +36,7 @@ public class Series implements Serializable {
     @Column(name = "organizer")
     private String organizer;
 
-    @OneToMany(mappedBy = "event")
+    @OneToMany(mappedBy = "eventInSeries")
     @JsonIgnore
     @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
     private Set<Event> series = new HashSet<>();
@@ -99,13 +99,13 @@ public class Series implements Serializable {
 
     public Series addSeries(Event event) {
         this.series.add(event);
-        event.setEvent(this);
+        event.setEventInSeries(this);
         return this;
     }
 
     public Series removeSeries(Event event) {
         this.series.remove(event);
-        event.setEvent(null);
+        event.setEventInSeries(null);
         return this;
     }
 

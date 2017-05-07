@@ -25,7 +25,7 @@
                 <constraints nullable="true" />
             </column>
 
-            <column name="topic_id" type="bigint">
+            <column name="topic_in_event_id" type="bigint">
                 <constraints nullable="true" />
             </column>
 

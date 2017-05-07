@@ -12,15 +12,15 @@ import java.util.List;
 @Mapper(componentModel = "spring", uses = {})
 public interface EventMapper {
 
-    @Mapping(source = "event.id", target = "eventId")
-    @Mapping(source = "event.id", target = "eventId")
+    @Mapping(source = "eventInCity.id", target = "eventInCityId")
+    @Mapping(source = "eventInSeries.id", target = "eventInSeriesId")
     EventDTO eventToEventDTO(Event event);
 
     List<EventDTO> eventsToEventDTOs(List<Event> events);
 
     @Mapping(target = "events", ignore = true)
-    @Mapping(source = "eventId", target = "event")
-    @Mapping(source = "eventId", target = "event")
+    @Mapping(source = "eventInCityId", target = "eventInCity")
+    @Mapping(source = "eventInSeriesId", target = "eventInSeries")
     Event eventDTOToEvent(EventDTO eventDTO);
 
     List<Event> eventDTOsToEvents(List<EventDTO> eventDTOs);

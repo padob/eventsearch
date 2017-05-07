@@ -15,7 +15,7 @@ public class TopicDTO implements Serializable {
 
     private String name;
 
-    private Long topicId;
+    private Long topicInEventId;
 
     public Long getId() {
         return id;
@@ -32,12 +32,12 @@ public class TopicDTO implements Serializable {
         this.name = name;
     }
 
-    public Long getTopicId() {
-        return topicId;
+    public Long getTopicInEventId() {
+        return topicInEventId;
     }
 
-    public void setTopicId(Long eventId) {
-        this.topicId = eventId;
+    public void setTopicInEventId(Long eventId) {
+        this.topicInEventId = eventId;
     }
 
     @Override

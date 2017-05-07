@@ -28,7 +28,7 @@ public class Topic implements Serializable {
     private String name;
 
     @ManyToOne
-    private Event topic;
+    private Event topicInEvent;
 
     public Long getId() {
         return id;
@@ -51,17 +51,17 @@ public class Topic implements Serializable {
         this.name = name;
     }
 
-    public Event getTopic() {
-        return topic;
+    public Event getTopicInEvent() {
+        return topicInEvent;
     }
 
-    public Topic topic(Event event) {
-        this.topic = event;
+    public Topic topicInEvent(Event event) {
+        this.topicInEvent = event;
         return this;
     }
 
-    public void setTopic(Event event) {
-        this.topic = event;
+    public void setTopicInEvent(Event event) {
+        this.topicInEvent = event;
     }
 
     @Override

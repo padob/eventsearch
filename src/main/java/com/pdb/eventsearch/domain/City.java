@@ -30,7 +30,7 @@ public class City implements Serializable {
     @Column(name = "name")
     private String name;
 
-    @OneToMany(mappedBy = "event")
+    @OneToMany(mappedBy = "eventInCity")
     @JsonIgnore
     @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
     private Set<Event> cities = new HashSet<>();
@@ -67,13 +67,13 @@ public class City implements Serializable {
 
     public City addCity(Event event) {
         this.cities.add(event);
-        event.setEvent(this);
+        event.setEventInCity(this);
         return this;
     }
 
     public City removeCity(Event event) {
         this.cities.remove(event);
-        event.setEvent(null);
+        event.setEventInCity(null);
         return this;
     }
 

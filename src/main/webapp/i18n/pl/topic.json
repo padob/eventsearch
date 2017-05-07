@@ -17,7 +17,7 @@
                 "title": "Topic"
             },
             "name": "Name",
-            "topic": "Topic"
+            "topicInEvent": "Topic In Event"
         }
     }
 }

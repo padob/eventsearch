@@ -46,8 +46,8 @@
                     <th jh-sort-by="address"><span data-translate="eventsearchApp.event.address">Address</span> <span class="glyphicon glyphicon-sort"></span></th>
                     <th jh-sort-by="registerationLink"><span data-translate="eventsearchApp.event.registerationLink">Registeration Link</span> <span class="glyphicon glyphicon-sort"></span></th>
                     <th jh-sort-by="eventWww"><span data-translate="eventsearchApp.event.eventWww">Event Www</span> <span class="glyphicon glyphicon-sort"></span></th>
-                    <th jh-sort-by="eventId"><span data-translate="eventsearchApp.event.event">Event</span> <span class="glyphicon glyphicon-sort"></span></th>
-                    <th jh-sort-by="eventId"><span data-translate="eventsearchApp.event.event">Event</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="eventInCityId"><span data-translate="eventsearchApp.event.eventInCity">Event In City</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="eventInSeriesId"><span data-translate="eventsearchApp.event.eventInSeries">Event In Series</span> <span class="glyphicon glyphicon-sort"></span></th>
                     <th></th>
                 </tr>
             </thead>
@@ -65,10 +65,10 @@
                     <td>{{event.registerationLink}}</td>
                     <td>{{event.eventWww}}</td>
                     <td>
-                        <a ui-sref="city-detail({id:event.eventId})">{{event.eventId}}</a>
+                        <a ui-sref="city-detail({id:event.eventInCityId})">{{event.eventInCityId}}</a>
                     </td>
                     <td>
-                        <a ui-sref="series-detail({id:event.eventId})">{{event.eventId}}</a>
+                        <a ui-sref="series-detail({id:event.eventInSeriesId})">{{event.eventInSeriesId}}</a>
                     </td>
                     <td class="text-right">
                         <div class="btn-group flex-btn-group-container">

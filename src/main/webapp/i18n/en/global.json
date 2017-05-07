@@ -8,6 +8,10 @@
             "entities": {
                 "main": "Entities",
                 "prelegent": "Prelegent",
+                "city": "City",
+                "event": "Event",
+                "series": "Series",
+                "topic": "Topic",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {

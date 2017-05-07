@@ -5,7 +5,7 @@
             "relationshipType": "one-to-many",
             "relationshipName": "series",
             "otherEntityName": "event",
-            "otherEntityRelationshipName": "event"
+            "otherEntityRelationshipName": "eventInSeries"
         }
     ],
     "fields": [
