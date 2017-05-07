@@ -30,9 +30,9 @@ entity Event {
 }
 
 relationship OneToMany {
-	City{city} to Event{event},
-    Series{series} to Event{event},
-    Event{event} to Topic{topic}
+	City{city} to Event{eventInCity},
+    Series{series} to Event{eventInSeries},
+    Event{event} to Topic{topicInEvent}
 }
 
 paginate City, Series, Event, Topic with pagination
