@@ -36,7 +36,11 @@ public class EventDTO implements Serializable {
 
     private Long eventInCityId;
 
+    private String eventInCityName;
+
     private Long eventInSeriesId;
+
+    private String eventInSeriesName;
 
     public Long getId() {
         return id;
@@ -124,12 +128,28 @@ public class EventDTO implements Serializable {
         this.eventInCityId = cityId;
     }
 
+    public String getEventInCityName() {
+        return eventInCityName;
+    }
+
+    public void setEventInCityName(String cityName) {
+        this.eventInCityName = cityName;
+    }
+
     public Long getEventInSeriesId() {
         return eventInSeriesId;
     }
 
     public void setEventInSeriesId(Long seriesId) {
         this.eventInSeriesId = seriesId;
+    }
+
+    public String getEventInSeriesName() {
+        return eventInSeriesName;
+    }
+
+    public void setEventInSeriesName(String seriesName) {
+        this.eventInSeriesName = seriesName;
     }
 
     @Override

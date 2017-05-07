@@ -13,6 +13,7 @@ import java.util.List;
 public interface TopicMapper {
 
     @Mapping(source = "topicInEvent.id", target = "topicInEventId")
+    @Mapping(source = "topicInEvent.name", target = "topicInEventName")
     TopicDTO topicToTopicDTO(Topic topic);
 
     List<TopicDTO> topicsToTopicDTOs(List<Topic> topics);

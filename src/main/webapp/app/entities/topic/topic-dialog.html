@@ -22,7 +22,7 @@
 
         <div class="form-group">
             <label data-translate="eventsearchApp.topic.topicInEvent" for="field_topicInEvent">Topic In Event</label>
-            <select class="form-control" id="field_topicInEvent" name="topicInEvent" ng-model="vm.topic.topicInEventId" ng-options="event.id as event.id for event in vm.events"            >
+            <select class="form-control" id="field_topicInEvent" name="topicInEvent" ng-model="vm.topic.topicInEventId" ng-options="event.id as event.name for event in vm.events"            >
                 <option value=""></option>
             </select>
         </div>

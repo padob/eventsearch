@@ -17,6 +17,8 @@ public class TopicDTO implements Serializable {
 
     private Long topicInEventId;
 
+    private String topicInEventName;
+
     public Long getId() {
         return id;
     }
@@ -38,6 +40,14 @@ public class TopicDTO implements Serializable {
 
     public void setTopicInEventId(Long eventId) {
         this.topicInEventId = eventId;
+    }
+
+    public String getTopicInEventName() {
+        return topicInEventName;
+    }
+
+    public void setTopicInEventName(String eventName) {
+        this.topicInEventName = eventName;
     }
 
     @Override

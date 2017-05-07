@@ -5,7 +5,7 @@
             "relationshipType": "many-to-one",
             "relationshipName": "topicInEvent",
             "otherEntityName": "event",
-            "otherEntityField": "id"
+            "otherEntityField": "name"
         }
     ],
     "fields": [

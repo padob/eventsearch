@@ -11,13 +11,13 @@
             "relationshipType": "many-to-one",
             "relationshipName": "eventInCity",
             "otherEntityName": "city",
-            "otherEntityField": "id"
+            "otherEntityField": "name"
         },
         {
             "relationshipType": "many-to-one",
             "relationshipName": "eventInSeries",
             "otherEntityName": "series",
-            "otherEntityField": "id"
+            "otherEntityField": "name"
         }
     ],
     "fields": [

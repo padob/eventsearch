@@ -13,7 +13,9 @@ import java.util.List;
 public interface EventMapper {
 
     @Mapping(source = "eventInCity.id", target = "eventInCityId")
+    @Mapping(source = "eventInCity.name", target = "eventInCityName")
     @Mapping(source = "eventInSeries.id", target = "eventInSeriesId")
+    @Mapping(source = "eventInSeries.name", target = "eventInSeriesName")
     EventDTO eventToEventDTO(Event event);
 
     List<EventDTO> eventsToEventDTOs(List<Event> events);

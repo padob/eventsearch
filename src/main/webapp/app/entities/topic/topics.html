@@ -37,7 +37,7 @@
                 <tr jh-sort="vm.predicate" ascending="vm.reverse" callback="vm.transition()">
                     <th jh-sort-by="id"><span data-translate="global.field.id">ID</span> <span class="glyphicon glyphicon-sort"></span></th>
                     <th jh-sort-by="name"><span data-translate="eventsearchApp.topic.name">Name</span> <span class="glyphicon glyphicon-sort"></span></th>
-                    <th jh-sort-by="topicInEventId"><span data-translate="eventsearchApp.topic.topicInEvent">Topic In Event</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="topicInEventName"><span data-translate="eventsearchApp.topic.topicInEvent">Topic In Event</span> <span class="glyphicon glyphicon-sort"></span></th>
                     <th></th>
                 </tr>
             </thead>
@@ -46,7 +46,7 @@
                     <td><a ui-sref="topic-detail({id:topic.id})">{{topic.id}}</a></td>
                     <td>{{topic.name}}</td>
                     <td>
-                        <a ui-sref="event-detail({id:topic.topicInEventId})">{{topic.topicInEventId}}</a>
+                        <a ui-sref="event-detail({id:topic.topicInEventId})">{{topic.topicInEventName}}</a>
                     </td>
                     <td class="text-right">
                         <div class="btn-group flex-btn-group-container">
