@@ -43,8 +43,8 @@
             </thead>
             <tbody>
                 <tr ng-repeat="topic in vm.topics track by topic.id">
-                    <td><a ui-sref="topic-detail({id:topic.id})">{{topic.id}}</a></td>
-                    <td>{{topic.name}}</td>
+                    <td>{{topic.id}}</td>
+                    <td><a ui-sref="topic-detail({id:topic.id})">{{topic.name}}</a></td>
                     <td>
                         <a ui-sref="event-detail({id:topic.topicInEventId})">{{topic.topicInEventName}}</a>
                     </td>

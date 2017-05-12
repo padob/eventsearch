@@ -44,8 +44,8 @@
             </thead>
             <tbody>
                 <tr ng-repeat="prelegent in vm.prelegents track by prelegent.id">
-                    <td><a ui-sref="prelegent-detail({id:prelegent.id})">{{prelegent.id}}</a></td>
-                    <td>{{prelegent.name}}</td>
+                    <td>{{prelegent.id}}</td>
+                    <td><a ui-sref="prelegent-detail({id:prelegent.id})">{{prelegent.name}}</a></td>
                     <td>{{prelegent.bio}}</td>
                     <td>{{prelegent.websiteUrl}}</td>
                     <td class="text-right">

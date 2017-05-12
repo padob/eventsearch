@@ -44,8 +44,8 @@
             </thead>
             <tbody>
                 <tr ng-repeat="series in vm.series track by series.id">
-                    <td><a ui-sref="series-detail({id:series.id})">{{series.id}}</a></td>
-                    <td>{{series.name}}</td>
+                    <td>{{series.id}}</td>
+                    <td><a ui-sref="series-detail({id:series.id})">{{series.name}}</a></td>
                     <td>{{series.description}}</td>
                     <td>{{series.organizer}}</td>
                     <td class="text-right">

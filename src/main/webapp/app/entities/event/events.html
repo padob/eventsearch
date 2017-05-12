@@ -53,8 +53,8 @@
             </thead>
             <tbody>
                 <tr ng-repeat="event in vm.events track by event.id">
-                    <td><a ui-sref="event-detail({id:event.id})">{{event.id}}</a></td>
-                    <td>{{event.name}}</td>
+                    <td>{{event.id}}</td>
+                    <td><a ui-sref="event-detail({id:event.id})">{{event.name}}</a></td>
                     <td>{{event.description}}</td>
                         <td>{{event.startDate | date:'mediumDate'}}</td>
                         <td>{{event.endDate | date:'mediumDate'}}</td>
